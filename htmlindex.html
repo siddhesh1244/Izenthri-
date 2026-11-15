@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Izenthri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="var(--accent)"/><path d="M6 22c4-7 8-9 11-9s7 2 11 9" fill="none" stroke="var(--accent-fg)" stroke-width="2.4" stroke-linecap="round"/><circle cx="17" cy="11" r="3" fill="var(--accent-fg)"/></svg>
+      <div><h1>Izenthri</h1><small>Goal planning and a weekly Happiness Index</small></div>
+    </div>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#plan" data-r="plan">Goal plan</a>
+      <a href="#checkin" data-r="checkin">Weekly check-in</a>
+      <a href="#dashboard" data-r="dashboard">Happiness Index</a>
+    </nav>
+  </header>
+  <main id="main"></main>
+  <footer>
+    <span id="storeinfo"></span>
+    <span>Scores are self-reported and are not a medical or clinical measure.</span>
+    <button type="button" id="clearbtn">Clear my data</button>
+  </footer>
+</div>
+<div id="toast" aria-live="polite"><div></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
